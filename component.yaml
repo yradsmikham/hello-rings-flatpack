@@ -45,3 +45,8 @@ subcomponents:
   source: https://github.com/bnookala/hello-rings-hld
   method: git
   branch: master
+- name: hello-rings
+  generator: component
+  source: https://github.com/bnookala/hello-rings-hld
+  method: git
+  branch: master
