@@ -1,4 +1,4 @@
-name: ""
+name: "hello-rings"
 subcomponents:
 - name: hello-rings
   generator: component
