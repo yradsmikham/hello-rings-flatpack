@@ -17,8 +17,7 @@ function verify_repo() {
 }
 
 function init() {
-    # cp -r ./* "$HOME/"
-    cp -r * "$HOME/"
+    cp -r ./* "$HOME/"
     cd "$HOME"
 }
 
@@ -152,7 +151,6 @@ function git_connect() {
     repo_name=${repo%.*}
 
     cd "$repo_name"
-    ls
     echo "GIT PULL ORIGIN MASTER"
     git pull origin master
 }
@@ -168,10 +166,8 @@ function git_commit() {
     git status
     echo "GIT REMOVE"
     rm -rf ./*/
-    git rm -rf */
+    git rm -rf ./*/
     echo "COPY YAML FILES TO REPO DIRECTORY..."
-    echo "ls $HOME/generated/"
-    ls "$HOME/generated/"
     cp -r $HOME/generated/* .
     echo "GIT ADD"
     git add -A
