@@ -172,7 +172,7 @@ function git_commit() {
     echo "COPY YAML FILES TO REPO DIRECTORY..."
     echo "ls $HOME/generated/"
     ls "$HOME/generated/"
-    cp -r "$HOME/generated/*" .
+    cp -r $HOME/generated/* .
     echo "GIT ADD"
     git add -A
 
