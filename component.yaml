@@ -2,7 +2,7 @@ name: hello-rings-flatpack
 subcomponents:
 - name: hello-rings
   type: component
-  source: https://github.com/bnookala/hello-rings-hld
+  source: https://github.com/yradsmikham/hello-rings-hld
   method: git
   branch: master
 - name: ring-operator
